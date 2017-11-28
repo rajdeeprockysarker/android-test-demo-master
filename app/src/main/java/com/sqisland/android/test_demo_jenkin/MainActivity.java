@@ -21,7 +21,7 @@ public class MainActivity extends Activity {
 
     ((DemoApplication) getApplication()).component().inject(this);
 
-    TextView todayView = (TextView) findViewById(R.id.date);
+    TextView todayView = (TextView) findViewById(R.id.date7);
 
     long millis = getIntent().getLongExtra(KEY_MILLIS, -1);
     DateTime dateTime = (millis > 0) ? new DateTime(millis) : clock.getNow();
